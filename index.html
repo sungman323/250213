@@ -20,7 +20,7 @@
     if(document.URL.match('move_pc_screen')) mobile_keys = null;
     for(i in mobile_keys){ // in키워드 : 키값이 일치한다면 true 값 반환, 없으면 false
       if(navigator.userAgent.match(mobile_keys[i])!=null){
-        location.href = 'http://man323.dothome.co.kr/250213_web/m/index.html';
+        location.href = './m/index.html';
         break; // 일치하면 종료
       }
     }
