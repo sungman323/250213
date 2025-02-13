@@ -1,0 +1,113 @@
+@charset "utf-8";
+
+/* 메인컨텐츠 서식 */
+.mslide{
+  height: 65vh;
+  overflow: hidden;
+  position: relative;
+}
+.mslide img{
+  width:100%;
+}
+.mslide > h2{display:none;}
+.swiper-slide > h2{
+  position: absolute;
+  background-color: rgba(0,0,0,.7);
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  padding: 16px 14px;
+  border-radius: 40px;
+  width:300px;
+  top:50%; left:50%;
+  transform: translate(-50%,-50%);
+  line-height: 30px;
+}
+.swiper-pagination{
+  position: absolute;
+  bottom: 35px !important;
+}
+.swiper-pagination-bullet{
+  transition: 0.5s;
+  border-radius: 10px !important;
+}
+.swiper-pagination-bullet-active{
+  width: 50px !important;
+  border-radius: 10px !important;
+  background-color: #07f !important;
+}
+
+/* 메인 내비게이션 */
+.m_gnb{
+  width:90%;
+  margin: 20px auto;
+}
+.m_gnb > ul{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 10px;
+}
+.m_gnb > ul > li{
+  border: 1px solid #ccc;
+  text-align: center;
+}
+.icon{
+  background-image: url('../images/nav_icon.png');
+  background-size: 360px;
+  display:inline-block;
+  width: 83px; height: 66px;
+}
+.map .icon, .map .mnu{
+  display: inline-block;
+  line-height: 38px;
+  font-size: 16px;
+}
+.mnu{
+  display:block;
+  line-height: 30px;
+  font-weight: 600;
+}
+.map{
+  grid-area: 3/1/4/4;
+}
+/* 각 li태그 icon이미지 위치 변경 */
+.m_gnb li:nth-child(2) .icon{background-position: -82px 0px;}
+.m_gnb li:nth-child(3) .icon{background-position: -167px 0px;}
+.m_gnb li:nth-child(4) .icon{
+  background-position: -250px 0px;
+  width: 100px;
+}
+.m_gnb li:nth-child(5) .icon{background-position: 10px -65px;}
+.m_gnb li:nth-child(6) .icon{background-position: -67px -65px;}
+.m_gnb li:last-child .icon{
+  background-position: -162px -64px; width:40px; height: 40px;
+}
+
+/* 연락처 */
+.info{
+  width: 90%; height: 70px;
+  margin: 20px auto;
+  background-image: url(../images/info_back.png);
+  background-size: 100%;
+  color: #fff;
+}
+.info h3{
+  width:150px;
+  float: left;
+  font-size: 24px;
+  font-weight: bold;
+}
+.info a{
+  color: #fff;
+  font-size: 16px;
+}
+.info .fa-phone{
+  font-size: 24px;
+  font-weight: bold;
+  padding: 22px 5px 0px 15%;
+}
+.info .tel{
+  padding-top: 16px;
+  line-height: 20px;
+}
